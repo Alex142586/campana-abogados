@@ -1156,6 +1156,47 @@
                 font-size: 22px;
             }
         }
+
+        /* Estilos para botones de redes sociales */
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #d4a574 0%, #b8956a 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50%;
+            font-size: 24px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(135deg, #b8956a 0%, #8b7355 100%);
+        }
+
+        .social-btn.linkedin:hover {
+            background: linear-gradient(135deg, #0077b5 0%, #005885 100%);
+        }
+
+        .social-btn.facebook:hover {
+            background: linear-gradient(135deg, #1877f2 0%, #166fe5 100%);
+        }
+
+        .social-btn.instagram:hover {
+            background: linear-gradient(135deg, #e4405f 0%, #c13584 100%);
+        }
     </style>
 </head>
 <body>
@@ -1352,6 +1393,19 @@
                 <p>📞 +51 981 433 019</p>
                 <p>✉️ servicioslegales.rcamp@gmail.com</p>
             </div>
+        </div>
+
+        <!-- Sección de Redes Sociales -->
+        <div class="social-buttons">
+            <a href="#" class="social-btn linkedin" target="_blank" rel="noopener noreferrer" aria-label="Síguenos en LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="social-btn facebook" target="_blank" rel="noopener noreferrer" aria-label="Síguenos en Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-btn instagram" target="_blank" rel="noopener noreferrer" aria-label="Síguenos en Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
         </div>
 
         <div class="footer-bottom">
