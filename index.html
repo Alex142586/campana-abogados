@@ -423,6 +423,8 @@
             border-radius: 20px;
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
             border: 4px solid rgba(212, 165, 116, 0.3);
+            width: 100%;
+            max-width: 320px;
         }
 
         .about-description {
@@ -596,8 +598,9 @@
         }
 
         .team-member img {
-            width: 200px;
-            height: 200px;
+            width: 100%;
+            max-width: 220px;
+            height: auto;
             border-radius: 50%;
             margin-bottom: 25px;
             object-fit: cover;
@@ -987,19 +990,46 @@
                 min-width: 180px;
             }
 
+            .about {
+                padding: 80px 15px;
+            }
+
             .about-content {
                 grid-template-columns: 1fr;
                 text-align: center;
                 gap: 40px;
             }
 
+            .about-image {
+                order: -1;
+            }
+
             .about-image img {
-                max-width: 280px;
+                max-width: 260px;
+                width: 100%;
             }
 
             .about-description {
                 text-align: center;
-                padding: 0 15px;
+                padding: 0 10px;
+                font-size: 1.1rem;
+                line-height: 1.7;
+            }
+
+            .about-highlights {
+                grid-template-columns: 1fr;
+                gap: 25px;
+                margin: 40px 0;
+            }
+
+            .highlight-item {
+                padding: 30px 20px;
+            }
+
+            .about-mission,
+            .about-vision {
+                padding: 35px 25px;
+                margin: 25px auto;
             }
 
             .contact-content {
@@ -1068,9 +1098,22 @@
                 font-size: 1.1rem;
             }
 
+            .team {
+                padding: 80px 15px;
+            }
+
             .team-grid {
                 grid-template-columns: 1fr;
                 gap: 40px;
+            }
+
+            .team-member {
+                padding: 35px 25px;
+            }
+
+            .team-member img {
+                max-width: 180px;
+                width: 100%;
             }
         }
 
