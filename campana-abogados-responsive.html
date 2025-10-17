@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaña, Abogados & Asociados - Asesoría Legal Corporativa Profesional</title>
+
+    <!-- SEO Optimizado -->
+    <meta name="description" content="Más de 14 años brindando soluciones legales sólidas y estratégicas en Perú. Especialistas en derecho corporativo, regulación de inteligencia artificial, derecho civil, laboral, saneamiento de propiedades y propiedad intelectual. Atención 100% virtual con opción presencial.">
+    <meta name="keywords" content="asesoría legal Perú, abogados corporativos, derecho digital, inteligencia artificial, derecho civil laboral, saneamiento propiedades, propiedad intelectual, abogados en Arequipa Lima Barranca">
+    <meta name="author" content="Campaña, Abogados & Asociados">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Campaña, Abogados & Asociados - Asesoría Legal Profesional">
+    <meta property="og:description" content="Más de 14 años de experiencia en asesoría legal especializada. Derecho corporativo, regulación IA, civil, laboral, propiedad intelectual.">
+    <meta property="og:url" content="https://campana-abogados.com">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Campaña, Abogados & Asociados">
+    <meta property="twitter:description" content="Asesoría legal especializada en Perú con más de 14 años de experiencia">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23344a75' d='M12 2L13.09 8.26L18 7L14.74 12L18 17L13.09 15.74L12 22L10.91 15.74L6 17L9.26 12L6 7L10.91 8.26L12 2Z'/></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23344a75' d='M12 2L13.09 8.26L18 7L14.74 12L18 17L13.09 15.74L12 22L10.91 15.74L6 17L9.26 12L6 7L10.91 8.26L12 2Z'/></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome para iconos modernos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS para animaciones al scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #dee2e6 100%);
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 20% 80%, rgba(52, 78, 117, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(139, 115, 85, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(72, 85, 99, 0.02) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image:
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="25" cy="25" r="0.5" fill="rgba(52,78,117,0.02)"/><circle cx="75" cy="75" r="0.5" fill="rgba(139,115,85,0.02)"/><circle cx="50" cy="10" r="0.3" fill="rgba(72,85,99,0.015)"/><path d="M20 80 L25 75 L20 70" stroke="rgba(52,78,117,0.015)" stroke-width="0.5" fill="none"/><rect x="70" y="15" width="8" height="2" fill="rgba(139,115,85,0.015)"/><circle cx="15" cy="60" r="0.8" fill="rgba(52,78,117,0.015)"/></svg>');
+            opacity: 0.3;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            background-size: 200% 200%;
+            animation: gradientShift 15s ease infinite;
+            color: white;
+            padding: 140px 20px;
+            text-align: center;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1920&h=1080&fit=crop&auto=format&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 0.1;
+            pointer-events: none;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 90"><g opacity="0.02"><rect x="250" y="20" width="8" height="12" fill="%23d4a574"/><circle cx="50" cy="45" r="1.5" fill="%23344a75"/><path d="M270 70 L275 65 L270 60" stroke="%238b7355" stroke-width="0.5" fill="none"/></g></svg>');
+            pointer-events: none;
+        }
+
+        .hero-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            margin-bottom: 30px;
+            font-weight: 700;
+            color: #ffffff;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            letter-spacing: -0.02em;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 20px 50px;
+            margin: 12px 15px;
+            border: 2px solid transparent;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            overflow: hidden;
+            min-width: 200px;
+            text-align: center;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .btn:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .btn span {
+            position: relative;
+            z-index: 1;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #d4a574 0%, #b8956a 100%);
+            color: white;
+            box-shadow: 0 8px 25px rgba(212, 165, 116, 0.5);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(212, 165, 116, 0.7);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: white;
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(255, 255, 255, 0.3);
+        }
+
+        .services {
+            padding: 120px 20px;
+            background: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .services::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                linear-gradient(135deg, rgba(248, 250, 252, 0.8) 0%, rgba(241, 245, 249, 0.6) 100%),
+                radial-gradient(ellipse at top, rgba(59, 130, 246, 0.03) 0%, transparent 60%),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><g opacity="0.03"><path d="M100 20 L120 40 L100 60 L80 40 Z" fill="%233b82f6"/><circle cx="50" cy="150" r="15" fill="%23f59e0b"/><rect x="140" y="140" width="20" height="30" fill="%2310b981"/></g></svg>');
+            pointer-events: none;
+        }
+
+        .services .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-title {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 3.2rem;
+            margin-bottom: 80px;
+            color: #0f172a;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #d4a574 0%, #b8956a 50%, #9a7c56 100%);
+            border-radius: 2px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .service-card {
+            background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+            padding: 50px 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.1),
+                0 1px 8px rgba(0, 0, 0, 0.06);
+            border: 2px solid transparent;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: 0;
+        }
+
+        .service-card:hover::before {
+            opacity: 0.05;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow:
+                0 20px 50px rgba(212, 165, 116, 0.4),
+                0 10px 30px rgba(0, 0, 0, 0.15);
+            border-color: rgba(212, 165, 116, 0.4);
+        }
+
+        .service-card > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 30px;
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            color: #d4a574;
+            box-shadow: 
+                0 8px 25px rgba(30, 41, 59, 0.5),
+                0 4px 15px rgba(51, 65, 85, 0.4);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .service-icon::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            background: linear-gradient(135deg, #d4a574, #b8956a, #9a7c56);
+            border-radius: 22px;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: -1;
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.15) rotate(5deg);
+            box-shadow: 
+                0 15px 40px rgba(212, 165, 116, 0.6),
+                0 8px 25px rgba(184, 149, 106, 0.5);
+        }
+
+        .service-card:hover .service-icon::before {
+            opacity: 1;
+        }
+
+        .service-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.7rem;
+            margin-bottom: 18px;
+            color: #1f2937;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            line-height: 1.3;
+        }
+
+        .about {
+            padding: 120px 20px;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #f1f5f9 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(ellipse at bottom, rgba(52, 74, 117, 0.05) 0%, transparent 50%),
+                radial-gradient(ellipse at top, rgba(139, 115, 85, 0.05) 0%, transparent 50%),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><g opacity="0.02"><circle cx="50" cy="50" r="3" fill="%23344a75"/><rect x="150" y="100" width="20" height="8" fill="%23d4a574"/><path d="M30 170 L35 165 L30 160" stroke="%238b7355" stroke-width="1" fill="none"/></g></svg>');
+            pointer-events: none;
+        }
+
+        .about .container {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 60px;
+        }
+
+        .about-text {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .about-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 700px;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+            border: 4px solid rgba(212, 165, 116, 0.3);
+        }
+
+        .about-description {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #4b5563;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .about-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .highlight-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            text-align: center;
+            padding: 35px 25px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .highlight-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .highlight-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #d4a574;
+            flex-shrink: 0;
+            box-shadow: 0 8px 20px rgba(30, 41, 59, 0.5);
+            transition: all 0.4s ease;
+        }
+
+        .highlight-item:hover .highlight-icon {
+            transform: scale(1.1) rotate(-5deg);
+            box-shadow: 0 12px 30px rgba(212, 165, 116, 0.6);
+        }
+
+        .highlight-text h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #344a75;
+            font-weight: 600;
+        }
+
+        .highlight-text p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+
+        .about-mission,
+        .about-vision {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 45px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            margin: 30px auto;
+            text-align: center;
+            max-width: 900px;
+        }
+
+        .about-mission h3,
+        .about-vision h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #344a75;
+            font-weight: 600;
+        }
+
+        .about-mission p,
+        .about-vision p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #4b5563;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .about-vision {
+            background: rgba(52, 74, 117, 0.05);
+        }
+
+        .team::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(ellipse at bottom, rgba(245, 158, 11, 0.05) 0%, transparent 50%),
+                radial-gradient(ellipse at top, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150"><g opacity="0.02"><circle cx="30" cy="30" r="2" fill="%233b82f6"/><rect x="100" y="20" width="12" height="3" fill="%23f59e0b"/><path d="M20 120 L25 115 L20 110" stroke="%2310b981" stroke-width="0.8" fill="none"/><circle cx="120" cy="100" r="1.5" fill="%238b5cf6"/></g></svg>');
+            pointer-events: none;
+        }
+
+        .team .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .team .section-title {
+            color: #0f172a;
+            font-size: 3.2rem;
+            margin-bottom: 80px;
+        }
+
+        .team .section-title::after {
+            background: linear-gradient(90deg, #f59e0b 0%, #3b82f6 50%, #10b981 100%);
+        }
+
+        .team-member {
+            text-align: center;
+            padding: 40px 30px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.1),
+                0 2px 16px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .team-member::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #f59e0b 0%, #3b82f6 100%);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .team-member:hover::before {
+            transform: scaleX(1);
+        }
+
+        .team-member:hover {
+            transform: translateY(-8px);
+            box-shadow:
+                0 20px 40px rgba(0, 0, 0, 0.15),
+                0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 25px;
+            object-fit: cover;
+            border: 4px solid linear-gradient(135deg, #f59e0b 0%, #3b82f6 100%);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            transition: all 0.4s ease;
+        }
+
+        .team-member:hover img {
+            transform: scale(1.05);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-member h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+            color: #1e293b;
+            font-weight: 600;
+        }
+
+        .team-member .role {
+            color: #d4a574;
+            font-weight: 700;
+            margin-bottom: 12px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .team-member .team-description {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-top: 15px;
+            padding: 0 20px;
+        }
+
+        .contact-section {
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse at bottom, rgba(212, 165, 116, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-form {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow:
+                0 10px 25px rgba(0, 0, 0, 0.1),
+                0 4px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e5e7eb;
+        }
+
+        .contact-form h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 25px;
+            color: #1f2937;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .contact-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+
+        .contact-item .icon {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            margin-top: 5px;
+        }
+
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            cursor: pointer;
+            box-shadow:
+                0 6px 20px rgba(37, 211, 102, 0.4),
+                0 2px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4), 0 2px 10px rgba(0, 0, 0, 0.2);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6), 0 4px 15px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.1) rotate(3deg);
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.6);
+            animation: none;
+        }
+
+        /* Estilos adicionales para el formulario */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #1f2937;
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px 18px;
+            border: 2px solid #e5e7eb;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: #ffffff;
+            color: #1f2937;
+            box-sizing: border-box;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #d4a574;
+            box-shadow: 0 0 0 4px rgba(212, 165, 116, 0.15);
+            transform: translateY(-1px);
+        }
+
+        .form-group select {
+            cursor: pointer;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23344155' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            background-size: 16px;
+            padding-right: 40px;
+            appearance: none;
+        }
+
+        .form-group select:hover {
+            border-color: #9ca3af;
+        }
+
+        .form-group select:invalid {
+            color: #9ca3af;
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+            padding: 60px 20px;
+            border-top: 2px solid #d4a574;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .footer-section h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #d4a574;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #374151;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #d4a574;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #d4a574;
+            letter-spacing: -0.02em;
+            text-shadow: 0 2px 10px rgba(212, 165, 116, 0.3);
+        }
+
+        .logo::after {
+            content: '⚖️';
+            position: absolute;
+            right: -25px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1rem;
+            opacity: 0.6;
+        }
+
+        .tagline {
+            font-size: 0.8rem;
+            color: #6b7280;
+            font-weight: 400;
+            margin-top: 2px;
+            font-style: italic;
+            letter-spacing: 0.5px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 35px;
+            align-items: center;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #e2e8f0;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            padding: 8px 16px;
+            border-radius: 6px;
+        }
+
+        .nav a:hover {
+            color: #d4a574;
+            background: rgba(212, 165, 116, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .nav a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: #344a75;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .nav a:hover::before,
+        .nav a.active::before {
+            width: 100%;
+        }
+
+        /* Menú hamburguesa para móviles */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 1.5rem;
+            color: #4b5563;
+        }
+
+        .menu-toggle:hover {
+            color: #344a75;
+        }
+
+        .menu-toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: currentColor;
+            margin: 5px 0;
+            transition: 0.3s;
+        }
+
+        .menu-toggle.active span:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+
+        .menu-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-toggle.active span:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+
+        .nav.mobile-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            flex-direction: column;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+
+        .nav.mobile-menu.show {
+            display: flex;
+        }
+
+        .nav.mobile-menu a {
+            padding: 15px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .nav.mobile-menu a:last-child {
+            border-bottom: none;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+                padding: 0 10px;
+            }
+
+            .btn {
+                padding: 16px 35px;
+                margin: 10px 10px;
+                font-size: 0.9rem;
+                min-width: 180px;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 40px;
+            }
+
+            .about-image img {
+                max-width: 280px;
+            }
+
+            .about-description {
+                text-align: center;
+                padding: 0 15px;
+            }
+
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .contact-info {
+                order: 2;
+            }
+
+            .contact-form {
+                order: 1;
+                margin-bottom: 30px;
+            }
+
+            .nav {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .header-content {
+                flex-direction: column;
+                height: auto;
+                padding: 20px;
+                gap: 20px;
+                position: relative;
+            }
+
+            .logo {
+                font-size: 1.6rem;
+            }
+
+            .tagline {
+                font-size: 0.7rem;
+            }
+
+            .whatsapp-btn {
+                bottom: 15px;
+                right: 15px;
+                width: 55px;
+                height: 55px;
+                font-size: 24px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .service-card {
+                padding: 40px 30px;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+            }
+
+            .form-group input,
+            .form-group select,
+            .form-group textarea {
+                padding: 18px 20px;
+                font-size: 1.1rem;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 100px 15px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .btn {
+                padding: 14px 30px;
+                font-size: 0.85rem;
+                min-width: 160px;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .service-card {
+                padding: 35px 25px;
+            }
+
+            .about-image img {
+                max-width: 250px;
+            }
+
+            .whatsapp-btn {
+                bottom: 12px;
+                right: 12px;
+                width: 50px;
+                height: 50px;
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div>
+                <a href="#inicio" class="logo">Campaña, Abogados & Asociados</a>
+                <div class="tagline">"Soluciones Legales con Excelencia y Confianza"</div>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#sobre-nosotros">Sobre Nosotros</a>
+                <a href="#equipo">Equipo</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1 data-aos="fade-down" data-aos-duration="1200">Campaña, Abogados & Asociados</h1>
+            <p data-aos="fade-up" data-aos-delay="200">
+                Estrategia legal sin complicaciones.
+                <strong>Atención 100% virtual</strong> con opción de reuniones presenciales <strong>previa bajo cita</strong> en Arequipa, Lima y Barranca.
+            </p>
+            <div data-aos="fade-up" data-aos-delay="400">
+                <a href="#contacto" class="btn btn-primary">Solicitar asesoría</a>
+                <a href="#contacto" class="btn btn-secondary">Contáctenos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Nuestros Servicios Especializados</h2>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon"><i class="fas fa-building"></i></div>
+                    <h3>Derecho Corporativo y Societario</h3>
+                    <p>Asesoría en constitución de empresas, fusiones, adquisiciones, gobierno corporativo, entre otros.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Derecho de Regulación de Inteligencia Artificial</h3>
+                    <p>Asesoría en el marco regulatorio de la IA, protección de datos, responsabilidad civil, entre otros.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon"><i class="fas fa-balance-scale"></i></div>
+                    <h3>Derecho Civil</h3>
+                    <p>Contratos, responsabilidad civil, derecho de familia, sucesiones, entre otros.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon"><i class="fas fa-users"></i></div>
+                    <h3>Derecho Laboral</h3>
+                    <p>Contratos laborales, despidos, seguridad social, relaciones laborales, conflictos colectivos, entre otros.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon"><i class="fas fa-home"></i></div>
+                    <h3>Saneamiento de Propiedades</h3>
+                    <p>Regularización de predios, títulos de propiedad, deslinde y amojonamiento, entre otros.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon"><i class="fas fa-copyright"></i></div>
+                    <h3>Propiedad Intelectual</h3>
+                    <p>Marcas, patentes, derechos de autor, nombres comerciales, entre otros.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="sobre-nosotros">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h2 class="section-title" data-aos="fade-up">Sobre Campaña, Abogados & Asociados</h2>
+                    <p class="about-description" data-aos="fade-up" data-aos-delay="100">
+                        Con más de 14 años de experiencia en el ámbito legal peruano, <strong>Campaña, Abogados & Asociados</strong> se ha consolidado como un referente en la prestación de servicios legales especializados y de alta calidad.
+                    </p>
+                    <p class="about-description">
+                        Nuestro compromiso radica en brindar <strong>soluciones legales sólidas, estratégicas y adaptadas</strong> a las necesidades específicas de cada cliente, combinando la experiencia tradicional del derecho con una visión moderna e innovadora para enfrentar los nuevos desafíos jurídicos del Perú y el mundo.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item" data-aos="fade-right" data-aos-delay="100">
+                            <div class="highlight-icon"><i class="fas fa-landmark"></i></div>
+                            <div class="highlight-text">
+                                <h4>Experiencia Comprobada</h4>
+                                <p>Más de una década asesorando empresas y particulares en temas legales complejos</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item" data-aos="fade-right" data-aos-delay="200">
+                            <div class="highlight-icon"><i class="fas fa-bullseye"></i></div>
+                            <div class="highlight-text">
+                                <h4>Especialización Técnica</h4>
+                                <p>Abordamos desde derecho corporativo hasta regulación de inteligencia artificial</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item" data-aos="fade-right" data-aos-delay="300">
+                            <div class="highlight-icon"><i class="fas fa-handshake"></i></div>
+                            <div class="highlight-text">
+                                <h4>Atención Personalizada</h4>
+                                <p>Cada caso recibe atención especializada según sus características únicas</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item" data-aos="fade-right" data-aos-delay="400">
+                            <div class="highlight-icon"><i class="fas fa-briefcase"></i></div>
+                            <div class="highlight-text">
+                                <h4>Compromiso con el Cliente</h4>
+                                <p>Trabajamos con transparencia, ética y dedicación absoluta a sus intereses</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-mission">
+                        <h3>Nuestra Misión</h3>
+                        <p>Ser el aliado estratégico de nuestros clientes, proporcionando asesoría legal de excelencia que contribuya al éxito y crecimiento de sus proyectos, siempre con un enfoque ético y responsable.</p>
+                    </div>
+                    <div class="about-vision">
+                        <h3>Nuestra Visión</h3>
+                        <p>Ser reconocidos como el despacho líder en servicios legales especializados, destacando por nuestra innovación, experiencia y compromiso inquebrantable con la justicia y el derecho.</p>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&h=450&fit=crop&crop=center&auto=format&q=85" alt="Equipo de Campaña Abogados" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="equipo">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Nuestro Equipo Profesional</h2>
+            <div class="team-grid">
+                <div class="team-member" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop&crop=face&auto=format&q=85" alt="Dra. Rosa Campaña">
+                    <h3>Dra. Rosa Campaña</h3>
+                    <p class="role">Socia Fundadora</p>
+                    <p class="team-description">Especialista en Derecho Corporativo y Regulación de IA</p>
+                </div>
+
+                <div class="team-member" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop&crop=face&auto=format&q=85" alt="Dr. Leandro Campaña">
+                    <h3>Dr. Leandro Campaña</h3>
+                    <p class="role">Socio</p>
+                    <p class="team-description">Experto en Derecho Civil y Propiedad Intelectual</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contacto">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+
+                    <div class="contact-item">
+                        <div class="icon">📍</div>
+                        <div>
+                            <strong>Dirección</strong><br/>
+                            Atención de manera virtual, garantizando cercanía y eficiencia sin importar la ubicación del cliente.<br/>
+                            Atención presencial en Arequipa, Lima y Barranca, con cita previa.
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon">📞</div>
+                        <div>
+                            <strong>Teléfono</strong><br/>
+                            <a href="tel:+51981433019" style="color: white; text-decoration: none;">+51 981 433 019</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon">✉️</div>
+                        <div>
+                            <strong>Email</strong><br/>
+                            <a href="mailto:servicioslegales.rcamp@gmail.com" style="color: white; text-decoration: none;">servicioslegales.rcamp@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 40px;">
+                        <h4>Horario de Atención</h4>
+                        <p>Atención virtual: Lunes a Viernes 8:00 AM - 8:00 PM</p>
+                        <p>Sábados: 9:00 AM - 2:00 PM</p>
+                        <p>Atención presencial: Solo con cita previa</p>
+                        <p>Domingos y feriados: Consultas de emergencia</p>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 20px; color: #1e293b;">Envíanos un Mensaje</h3>
+                    <form onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Nombre Completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Servicio / Asunto</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Seleccionar servicio...</option>
+                                <option value="Derecho Corporativo y Societario">🏢 Derecho Corporativo y Societario</option>
+                                <option value="Derecho de Regulación de Inteligencia Artificial">🤖 Derecho de Regulación de Inteligencia Artificial</option>
+                                <option value="Derecho Civil">⚖️ Derecho Civil</option>
+                                <option value="Derecho Laboral">👥 Derecho Laboral</option>
+                                <option value="Saneamiento de Propiedades">🏠 Saneamiento de Propiedades</option>
+                                <option value="Propiedad Intelectual">©️ Propiedad Intelectual</option>
+                                <option value="Consulta General">💼 Consulta General</option>
+                                <option value="Otro">❓ Otro asunto</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Describe tu consulta legal en detalle..."></textarea>
+                        </div>
+
+                        <!-- Estado del formulario -->
+                        <div id="form-status" style="margin-bottom: 15px; text-align: center; min-height: 20px;"></div>
+
+                        <button type="submit" id="submit-btn" style="background: linear-gradient(135deg, #d4a574 0%, #b8956a 100%); color: white; padding: 18px 50px; border: 2px solid #d4a574; border-radius: 8px; font-size: 1.1rem; font-weight: 600; cursor: pointer; width: 100%; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease;">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Campaña, Abogados & Asociados</h3>
+                <p>Más de 14 años brindando soluciones legales sólidas, estratégicas y adaptadas a las necesidades de cada cliente. Atención 100% virtual con opción presencial en Arequipa, Lima y Barranca.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Servicios</h3>
+                <p>Derecho Corporativo</p>
+                <p>Derecho de IA</p>
+                <p>Derecho Civil</p>
+                <p>Derecho Laboral</p>
+                <p>Saneamiento de Propiedades</p>
+                <p>Propiedad Intelectual</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>📍 Atención 100% virtual en todo el Perú</p>
+                <p>🏢 Presencial: Arequipa, Lima, Barranca (con cita previa)</p>
+                <p>📞 +51 981 433 019</p>
+                <p>✉️ servicioslegales.rcamp@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Campaña, Abogados & Asociados. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/51981433019?text=Hola, me gustaría solicitar información sobre sus servicios legales." class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+        💬
+    </a>
+
+    <script>
+        // Configuración de EmailJS con credenciales reales
+        emailjs.init('vZT6O_m_0KkOF97ab');
+
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            // Obtener elementos del formulario
+            const submitBtn = document.getElementById('submit-btn');
+            const formStatus = document.getElementById('form-status');
+            const serviceSelect = document.getElementById('subject');
+            const selectedService = serviceSelect.options[serviceSelect.selectedIndex].text;
+
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+
+            // Validar que se haya seleccionado un servicio
+            if (!formData.subject) {
+                alert('Por favor, selecciona un servicio antes de enviar el mensaje.');
+                return;
+            }
+
+            // Mostrar mensaje de carga
+            submitBtn.textContent = 'Enviando...';
+            submitBtn.disabled = true;
+            submitBtn.style.opacity = '0.7';
+            formStatus.innerHTML = '<span style="color: #f59e0b; font-size: 0.9rem;">⏳ Procesando tu mensaje...</span>';
+
+            // Crear mensaje para WhatsApp
+            const whatsappMessage = `¡Nuevo mensaje de la página web!%0A%0A👤 *Nombre:* ${formData.name}%0A📧 *Email:* ${formData.email}%0A📱 *Teléfono:* ${formData.phone || 'No proporcionado'}%0A🏢 *Servicio:* ${selectedService}%0A%0A💬 *Mensaje:*%0A${formData.message}%0A%0A---%0AEnviado desde la página web`;
+
+            // Abrir WhatsApp en nueva ventana
+            const whatsappURL = `https://wa.me/51981433019?text=${whatsappMessage}`;
+            window.open(whatsappURL, '_blank');
+
+            // Preparar datos para EmailJS
+            const templateParams = {
+                from_name: formData.name,
+                from_email: formData.email,
+                phone: formData.phone,
+                subject: selectedService,
+                message: `Servicio solicitado: ${selectedService}\n\n${formData.message}`,
+                to_email: 'servicioslegales.rcamp@gmail.com'
+            };
+
+            // Enviar por email
+            emailjs.send('service_mr8gmv2', 'template_97fe729', templateParams)
+                .then((response) => {
+                    console.log('Correo enviado exitosamente:', response);
+
+                    // Mostrar confirmación visual
+                    formStatus.innerHTML = '<span style="color: #10b981; font-weight: 600; font-size: 0.9rem;">✅ ¡Mensaje enviado con éxito! Se abrió WhatsApp automáticamente.</span>';
+                    submitBtn.textContent = '¡Enviado!';
+                    submitBtn.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
+
+                    // Resetear formulario después de 2 segundos
+                    setTimeout(() => {
+                        event.target.reset();
+                        submitBtn.textContent = 'Enviar Mensaje';
+                        submitBtn.disabled = false;
+                        submitBtn.style.opacity = '1';
+                        submitBtn.style.background = 'linear-gradient(135deg, #d4a574 0%, #b8956a 100%)';
+                        formStatus.innerHTML = '';
+                    }, 3000);
+                })
+                .catch((error) => {
+                    console.error('Error al enviar el correo:', error);
+
+                    // Mostrar error
+                    formStatus.innerHTML = '<span style="color: #ef4444; font-size: 0.9rem;">⚠️ Error al enviar email. El mensaje se envió por WhatsApp correctamente.</span>';
+                    submitBtn.textContent = 'Enviar Mensaje';
+                    submitBtn.disabled = false;
+                    submitBtn.style.opacity = '1';
+
+                    // Resetear mensaje de error después de 5 segundos
+                    setTimeout(() => {
+                        formStatus.innerHTML = '';
+                    }, 5000);
+                });
+        }
+
+        // Smooth scroll para navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Inicializar AOS (Animate On Scroll)
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 100
+        });
+
+        // Función para menú hamburguesa móvil
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('.nav');
+
+            menuToggle.classList.toggle('active');
+            nav.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
