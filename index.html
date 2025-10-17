@@ -1,4 +1,7 @@
-<meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campaña, Abogados & Asociados - Asesoría Legal Corporativa Profesional</title>
 
@@ -726,22 +729,47 @@
             margin-top: 5px;
         }
 
-        /* Botón Volver Arriba */
+        .whatsapp-hero {
+            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+            color: white;
+            padding: 16px 35px;
+            border: 2px solid #25d366;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-hero:hover {
+            background: linear-gradient(135deg, #128c7e 0%, #075e54 100%);
+            border-color: #128c7e;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        }
+
+        .whatsapp-hero i {
+            font-size: 1.2rem;
+        }
+
         .back-to-top {
             position: fixed;
-            bottom: 30px;
-            left: 20px;
+            bottom: 25px;
+            left: 25px;
             background: linear-gradient(135deg, #d4a574 0%, #b8956a 100%);
             color: white;
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 20px;
+            font-size: 24px;
             cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
             transition: all 0.3s ease;
             z-index: 999;
             opacity: 0;
@@ -757,25 +785,8 @@
 
         .back-to-top:hover {
             background: linear-gradient(135deg, #b8956a 0%, #8b7355 100%);
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-        }
-
-        @keyframes pulse {
-            0%, 100% {
-                transform: scale(1);
-                box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4), 0 2px 10px rgba(0, 0, 0, 0.2);
-            }
-            50% {
-                transform: scale(1.05);
-                box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6), 0 4px 15px rgba(0, 0, 0, 0.3);
-            }
-        }
-
-        .whatsapp-btn:hover {
-            transform: scale(1.1) rotate(3deg);
-            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.6);
-            animation: none;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
         }
 
         /* Estilos adicionales para el formulario */
@@ -1009,13 +1020,26 @@
         }
 
         @media (max-width: 768px) {
+            /* Mejoras generales para móviles */
+            body {
+                font-size: 16px;
+                line-height: 1.6;
+            }
+
+            .container {
+                max-width: 100%;
+                padding: 0 15px;
+            }
+
             .hero h1 {
                 font-size: 2.5rem;
+                line-height: 1.2;
             }
 
             .hero p {
                 font-size: 1.2rem;
                 padding: 0 10px;
+                line-height: 1.5;
             }
 
             .btn {
@@ -1023,6 +1047,7 @@
                 margin: 10px 10px;
                 font-size: 0.9rem;
                 min-width: 180px;
+                min-height: 48px; /* Touch-friendly */
             }
 
             .about {
@@ -1105,35 +1130,15 @@
                 font-size: 0.7rem;
             }
 
-            .whatsapp-btn {
-                bottom: 80px;
-                right: 15px;
-                width: 55px;
-                height: 55px;
-                font-size: 24px;
-                margin-right: 0;
-                margin-bottom: 10px;
-            }
-
-            .btn {
-                margin: 5px;
+            .whatsapp-hero {
                 padding: 14px 25px;
-                font-size: 0.9rem;
-                min-width: 160px;
+                font-size: 1rem;
+                min-width: 200px;
+                min-height: 48px;
             }
 
-            .hero .btn {
-                display: block;
-                margin: 10px auto;
-                max-width: 280px;
-            }
-
-            .back-to-top {
-                bottom: 20px;
-                left: 15px;
-                width: 45px;
-                height: 45px;
-                font-size: 18px;
+            .whatsapp-hero i {
+                font-size: 1.1rem;
             }
 
             .social-buttons {
@@ -1165,6 +1170,7 @@
             .form-group textarea {
                 padding: 18px 20px;
                 font-size: 1.1rem;
+                min-height: 48px; /* Touch-friendly */
             }
 
             .team {
@@ -1184,25 +1190,44 @@
                 max-width: 180px;
                 width: 100%;
             }
+
+            /* Mejoras adicionales */
+            .footer {
+                padding: 50px 15px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                text-align: center;
+            }
         }
 
         @media (max-width: 480px) {
+            /* Mejoras para pantallas muy pequeñas */
+            body {
+                font-size: 15px;
+            }
+
             .hero {
                 padding: 100px 15px;
             }
 
             .hero h1 {
                 font-size: 2rem;
+                line-height: 1.1;
             }
 
             .hero p {
                 font-size: 1.1rem;
+                padding: 0 5px;
             }
 
             .btn {
                 padding: 14px 30px;
                 font-size: 0.85rem;
                 min-width: 160px;
+                min-height: 44px;
             }
 
             .section-title {
@@ -1217,12 +1242,23 @@
                 max-width: 250px;
             }
 
-            .whatsapp-btn {
-                bottom: 12px;
-                right: 12px;
-                width: 50px;
-                height: 50px;
-                font-size: 22px;
+            .whatsapp-hero {
+                padding: 12px 20px;
+                font-size: 0.9rem;
+                min-width: 180px;
+                min-height: 44px;
+            }
+
+            .whatsapp-hero i {
+                font-size: 1rem;
+            }
+
+            .form-group input,
+            .form-group select,
+            .form-group textarea {
+                padding: 16px 18px;
+                font-size: 1rem;
+                min-height: 44px;
             }
         }
 
@@ -1349,7 +1385,9 @@
                 <strong>Atención 100% virtual</strong> con opción de reuniones presenciales <strong>previa bajo cita</strong> en Arequipa, Lima y Barranca.
             </p>
             <div data-aos="fade-up" data-aos-delay="400" class="hero-buttons">
-                <a href="https://wa.me/51981433019?text=Hola, me gustaría solicitar información sobre sus servicios legales." class="btn btn-cta whatsapp-btn" target="_blank" rel="noopener noreferrer">📞 Consulta por WhatsApp</a>
+                <a href="https://wa.me/51981433019?text=Hola, me gustaría solicitar información sobre sus servicios legales." class="btn btn-cta whatsapp-hero" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i> Consulta por WhatsApp
+                </a>
                 <a href="#contacto" class="btn btn-primary">📧 Contactar por Email</a>
             </div>
         </div>
@@ -1629,13 +1667,7 @@
         <i class="fas fa-chevron-up"></i>
     </button>
 
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/51981433019?text=Hola, me gustaría solicitar información sobre sus servicios legales." class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
-        💬
-    </a>
-
-    <script>
-        // Configuración de EmailJS con clave pública
+<script>
         emailjs.init('vZT6O_m_0KkOF97ab'); // Clave pública real de EmailJS
         function handleSubmit(event) {
             event.preventDefault();
