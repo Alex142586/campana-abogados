@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campaña, Abogados & Asociados - Asesoría Legal Corporativa Profesional</title>
 
@@ -1266,8 +1263,58 @@
             background: linear-gradient(135deg, #1877f2 0%, #166fe5 100%);
         }
 
-        .social-btn.instagram:hover {
-            background: linear-gradient(135deg, #e4405f 0%, #c13584 100%);
+        .hero-buttons {
+            margin-top: 30px;
+        }
+
+        .contact-schedule {
+            margin-top: 40px;
+        }
+
+        .form-title {
+            margin-bottom: 20px;
+            color: #1e293b;
+        }
+
+        .form-status {
+            margin-bottom: 15px;
+            text-align: center;
+            min-height: 20px;
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #d4a574 0%, #b8956a 100%);
+            color: white;
+            padding: 18px 50px;
+            border: 2px solid #d4a574;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .optional-text {
+            color: #6b7280;
+            font-size: 0.85rem;
+        }
+
+        .error-message {
+            color: #ef4444;
+            font-size: 0.9rem;
+        }
+
+        .contact-link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .contact-link:hover {
+            color: #d4a574;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -1279,7 +1326,7 @@
                 <a href="#inicio" class="logo">Campaña, Abogados & Asociados</a>
                 <div class="tagline">"Soluciones Legales con Excelencia y Confianza"</div>
             </div>
-            <button class="menu-toggle" onclick="toggleMenu()">
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menú de navegación">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -1301,7 +1348,7 @@
                 Estrategia legal sin complicaciones.
                 <strong>Atención 100% virtual</strong> con opción de reuniones presenciales <strong>previa bajo cita</strong> en Arequipa, Lima y Barranca.
             </p>
-            <div data-aos="fade-up" data-aos-delay="400" style="margin-top: 30px;">
+            <div data-aos="fade-up" data-aos-delay="400" class="hero-buttons">
                 <a href="https://wa.me/51981433019?text=Hola, me gustaría solicitar información sobre sus servicios legales." class="btn btn-cta whatsapp-btn" target="_blank" rel="noopener noreferrer">📞 Consulta por WhatsApp</a>
                 <a href="#contacto" class="btn btn-primary">📧 Contactar por Email</a>
             </div>
@@ -1459,7 +1506,7 @@
                         <div class="icon">📞</div>
                         <div>
                             <strong>Teléfono</strong><br/>
-                            <a href="tel:+51981433019" style="color: white; text-decoration: none;">+51 981 433 019</a>
+                            <a href="tel:+51981433019" class="contact-link">+51 981 433 019</a>
                         </div>
                     </div>
 
@@ -1467,11 +1514,11 @@
                         <div class="icon">✉️</div>
                         <div>
                             <strong>Email</strong><br/>
-                            <a href="mailto:servicioslegales.rcamp@gmail.com" style="color: white; text-decoration: none;">servicioslegales.rcamp@gmail.com</a>
+                            <a href="mailto:servicioslegales.rcamp@gmail.com" class="contact-link">servicioslegales.rcamp@gmail.com</a>
                         </div>
                     </div>
 
-                    <div style="margin-top: 40px;">
+                    <div class="contact-schedule">
                         <h4>Horario de Atención</h4>
                         <p>Atención virtual: Lunes a Viernes 8:00 AM - 8:00 PM</p>
                         <p>Sábados: 9:00 AM - 2:00 PM</p>
@@ -1481,7 +1528,7 @@
                 </div>
 
                 <div class="contact-form">
-                    <h3 style="margin-bottom: 20px; color: #1e293b;">Envíanos un Mensaje</h3>
+                    <h3 class="form-title">Envíanos un Mensaje</h3>
                     <form onsubmit="handleSubmit(event)">
                         <div class="form-group">
                             <label for="name">Nombre Completo</label>
@@ -1494,7 +1541,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="phone">Teléfono <span style="color: #6b7280; font-size: 0.85rem;">(opcional)</span></label>
+                            <label for="phone">Teléfono <span class="optional-text">(opcional)</span></label>
                             <input type="tel" id="phone" name="phone" placeholder="+51 981 433 019 (opcional)">
                         </div>
 
@@ -1520,9 +1567,9 @@
                         </div>
 
                         <!-- Estado del formulario -->
-                        <div id="form-status" style="margin-bottom: 15px; text-align: center; min-height: 20px;"></div>
+                        <div id="form-status" class="form-status"></div>
 
-                        <button type="submit" id="submit-btn" style="background: linear-gradient(135deg, #d4a574 0%, #b8956a 100%); color: white; padding: 18px 50px; border: 2px solid #d4a574; border-radius: 8px; font-size: 1.1rem; font-weight: 600; cursor: pointer; width: 100%; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease;">
+                        <button type="submit" id="submit-btn" class="submit-btn">
                             Enviar Mensaje
                         </button>
                     </form>
@@ -1609,7 +1656,7 @@
 
             // Validar que se haya seleccionado un servicio
             if (!formData.subject) {
-                formStatus.innerHTML = '<span style="color: #ef4444; font-size: 0.9rem;">⚠️ Por favor, selecciona un servicio antes de enviar el mensaje.</span>';
+                formStatus.innerHTML = '<span class="error-message">⚠️ Por favor, selecciona un servicio antes de enviar el mensaje.</span>';
                 return;
             }
 
@@ -1617,13 +1664,13 @@
             submitBtn.textContent = 'Enviando...';
             submitBtn.disabled = true;
             submitBtn.style.opacity = '0.7';
-            formStatus.innerHTML = '<span style="color: #f59e0b; font-size: 0.9rem;">⏳ Procesando tu mensaje...</span>';
+            formStatus.innerHTML = '<span class="loading-message">⏳ Procesando tu mensaje...</span>';
 
             // Verificar configuración de EmailJS
             if (emailjs && window.emailjs) {
                 // Configuración válida, proceder con envío
             } else {
-                formStatus.innerHTML = '<span style="color: #ef4444; font-size: 0.9rem;">⚠️ Error de configuración. Por favor, contacta directamente por WhatsApp o email.</span>';
+                formStatus.innerHTML = '<span class="error-message">⚠️ Error de configuración. Por favor, contacta directamente por WhatsApp o email.</span>';
                 submitBtn.textContent = 'Enviar Mensaje';
                 submitBtn.disabled = false;
                 submitBtn.style.opacity = '1';
