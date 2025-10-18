@@ -196,52 +196,23 @@
             box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
         }
 
-        .btn::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 0;
-            height: 0;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.3);
-            transform: translate(-50%, -50%);
-            transition: width 0.6s, height 0.6s;
-        }
-
-        .btn:hover::before {
-            width: 300px;
-            height: 300px;
-        }
-
-        .btn span {
-            position: relative;
-            z-index: 1;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, #d4a574 0%, #b8956a 100%);
+        .whatsapp-hero {
+            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
             color: white;
-            box-shadow: 0 8px 25px rgba(212, 165, 116, 0.5);
+            padding: 16px 35px;
+            border: 2px solid #25d366;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: none;
         }
 
-        .btn-primary:hover {
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 15px 40px rgba(212, 165, 116, 0.7);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: white;
-            border: 2px solid rgba(255, 255, 255, 0.9);
-            box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
-        }
-
-        .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.15);
-            border-color: white;
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 15px 40px rgba(255, 255, 255, 0.3);
+        .whatsapp-hero i {
+            font-size: 1.2rem;
         }
 
         .services {
@@ -1411,10 +1382,10 @@
                 <strong>Atención 100% virtual</strong> con opción de reuniones presenciales <strong>previa bajo cita</strong> en Arequipa, Lima y Barranca.
             </p>
             <div data-aos="fade-up" data-aos-delay="400" class="hero-buttons">
+                <a href="#contacto" class="btn btn-primary">📧 Contactar por Email</a>
                 <a href="https://wa.me/51981433019?text=Hola, me gustaría solicitar información sobre sus servicios legales." class="btn btn-cta whatsapp-hero" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-whatsapp"></i> Consulta por WhatsApp
                 </a>
-                <a href="#contacto" class="btn btn-primary">📧 Contactar por Email</a>
             </div>
         </div>
     </section>
@@ -1686,13 +1657,6 @@
         <div class="footer-bottom">
             <p>© 2025 Campaña, Abogados & Asociados. Todos los derechos reservados.</p>
         </div>
-    </footer>
-
-    <!-- Botón Volver Arriba -->
-    <button class="back-to-top" onclick="scrollToTop()" aria-label="Volver arriba">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-
 <script>
         emailjs.init('vZT6O_m_0KkOF97ab'); // Clave pública real de EmailJS
         function handleSubmit(event) {
